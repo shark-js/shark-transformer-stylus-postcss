@@ -27,8 +27,7 @@
     "co-mocha": "^1.1.0",
     "mocha": "^2.0.1",
     "shark-logger": "git://github.com/shark-js/shark-logger",
-    "shark-tree": "git://github.com/shark-js/shark-tree",
-    "shark-watcher": "git://github.com/shark-js/shark-watcher"
+    "shark-tree": "git://github.com/shark-js/shark-tree"
   },
   "dependencies": {
     "co": "^4.0.0",
@@ -39,6 +38,7 @@
     "shark-transformer-clean-css": "git://github.com/shark-js/shark-transformer-clean-css",
     "shark-transformer-csscomb": "git://github.com/shark-js/shark-transformer-csscomb",
     "shark-transformer-stylus": "git://github.com/shark-js/shark-transformer-stylus",
+    "shark-watcher": "git://github.com/shark-js/shark-watcher",
     "verror": "^1.6.0"
   }
 }
