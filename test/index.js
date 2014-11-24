@@ -40,8 +40,20 @@ describe('Transformation', function() {
 	it('should generate and write to file stylus string', function *() {
 		try {
 			var tree = yield TransformerStylusPostCss.treeToTree(this.filesTree, this.logger, {
-				autoprefixerOptions: {
-					browsers: this.browsers
+				autoprefixer: {
+					browsers: this.browsers,
+					enabled: true
+				},
+				stylus: {
+					define: {
+						'$ie8': new TransformerStylusPostCss.Stylus.nodes.Boolean(true)
+					}
+				},
+				cleanCss: {
+					enabled: true
+				},
+				cssComb: {
+					enabled: true
 				}
 			});
 			yield tree.writeContentToFiles();
